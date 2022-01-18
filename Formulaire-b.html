@@ -1,114 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-         <title>Accueil</title>
+         <title>Contact</title>
     
     </head>
 <body>
     <div class="container-fluid">
-
         <header>
             <div class="row">
                 <div class="col-6 col-md-6 col-lg-4">
                     <img src="/img/jarditou_logo.jpg" class="img-fluid" alt="" title="logo">
                 </div>
-
                 <div class="col-6">
-                    <h2 class="text-right">Tout le jardin</h2>
+                    <h2 class="text-right">La qualité depuis 70ans</h2>
                 </div>
             </div>
             </header>
                     <div class="row">
-
                         <div class="col-12">
-
                                 <ul>
                                         Jarditou.com 
                                         <a href="/Index.html" class="text-muted">Accueil</a> 
                                         <a href="/Jtableau.html" class="text-muted">Tableau</a>
-                                        <a href="/Jformulaire.html" class="text-muted">Formulaire</a>
-
-                                        
+                                        <a href="/Jformulaire.html" class="text-muted">Formulaire</a>  
                                         <div class="float-right">
-                                
                                             <div class="input-group">
                                                 <input type="search" class="form-control rounded" placeholder="Votre promotion" aria-label="Search"
                                                     aria-describedby="search-addon">
-                                                <button type="button" class="btn btn-outline-success">Rechercher</button>
+                                                <button type="button" class="btn btn-outline-success">Rechercher</button>  
                                             </div>
-
-
-
-                                        </div>  
-
-                                        
-
-                                </ul>
-                                
+                                        </div> 
+                                </ul>      
                         </div>
-
-                    </div>
-
-            
-
-
-        
-
+                        </div>
         <nav>
-
             <div class="row">
                 <div class="col-12">
-                <img src="/img/promotion.jpg"  class="img-fluid" alt="promotion" title="bannière">
+                    <img src="/img/promotion.jpg"  class="img-responsive" width="1320" height="auto" alt="promotion" title="bootstrap">
                 </div>
             </div>
-
-
-
-
-
         </nav>
 
+        <h3>Vos coordonnées</h3>
 
+        <form action="/action_page.php">
+            <div class="form-group">
+              <label for="Name">Nom*</label>
+              <input type="text" class="form-control" placeholder="Veuillez saisir votre nom" id="Name">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Prénom*</label>
+              <input type="text" class="form-control" placeholder="Veuillez saisir votre prénom" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Sexe*</label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">féminin
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Masculin
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Neutre
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="BD">Date de naissance*</label>
+              </div>
+            <div class="form-group">
+                <input type="date" name="birthDate">
+            </div>
+            <div class="form-group">
+                <label for="Cp">Code postal*</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Adress">Adresse</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="City">Ville</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Mail">Email*</label>
+                <input type="text" class="form-control" placeholder="dave.loper@afpa.fr" id="Mail">
+            </div>
+            <h3>Votre Demande</h3>
+            <div class="form-group">
+                <label for="Subject">Sujet*</label>
+                <form>
+                    <select name="cars" class="custom-select">
+                      <option selected>Veuillez sélectonner un sujet</option>
+                      <option value="Manu1">Manu1</option>
+                      <option value="Manu2">Manu2</option>
+                      <option value="Manu3">Manu3</option>
+                    </select>
+                  </form>
+            </div>
+            <div class="form-group">
+                <label for="Question">Votre Question* :</label>
+                <textarea class="form-control" rows="2" id="Question"></textarea>
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> J'accepte le traitement informatique de ce formulaire
+              </label>
+            </div>
+            <button type="submit" class="btn btn-dark">Envoyer</button>
+            <button type="submit" class="btn btn-dark">Annuler</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </form>
+          
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
