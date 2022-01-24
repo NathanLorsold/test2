@@ -11,22 +11,11 @@
 </head>
 <body>
     <div class="container"> 
-<!-- 
-        <header class="row">
-            
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="/img/jarditou_logo.jpg" class="img-fluid" alt="" title="logo">
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <h2 class="text-right">Tout le jardin</h2>
-            </div>
-
         
 
 
 
-        <div class="row">
+        <!-- <div class="row">
 
             <div class="col-12">
     
@@ -53,28 +42,29 @@
                         </div>
                 </div>
     
-            </div> -->
+            </div> --> 
             <header class="row">
-            
                 <div class="col-12 col-md-6 col-lg-4">
-                    <img src="/img/jarditou_logo.jpg" class="img-fluid" alt="" title="logo">
+                    <!-- Cette ligne de code permet de cacher le logo jaridtou quand on veut afficher la page web au format mobile -->
+                    <div class="d-none d-lg-block d-print-block"> <img src="/img/jarditou_logo.jpg" class="img-fluid" alt="" title="logo"> </div>
                 </div>
     
                 <div class="col-12 col-md-6 col-lg-4">
-                    <h2 class="text-right">Tout le jardin</h2>
+                    <!-- Cette ligne de code permet de cacher le texte quand on veut afficher la page web en format mobile -->
+                    <div class="d-none d-lg-block d-print-block"><h2 class="text-right">Tout le jardin</h2></div>
                 </div>
-
+            </div>
             </header>
                 <nav class="navbar navbar-expand-md bg-light navbar-light">
-                <!-- Brand -->
+                <!-- Permet d'ajouter une légende au près du bouton déroulant -->
                 <a class="navbar-brand" href="#">Jarditou.com</a>
               
-                <!-- Toggler/collapsibe Button -->
+                <!-- Bouton déroulant -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
-                <!-- Navbar links -->
+                <!-- Navbar lien -->
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav">
                     <li class="nav-item">
@@ -95,7 +85,6 @@
             <img src="/img/promotion.jpg" alt="promotion" width="1830" height="250" title="bannière">
 
 
-    </header>
 
 
 
